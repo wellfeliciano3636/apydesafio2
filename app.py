@@ -29,6 +29,14 @@
 import sqlite3  # Biblioteca para interagir com o banco de dados SQLite
 from flask import Flask, request, jsonify  # Importamos Flask para criar a API e request/jsonify para manipular requisições e respostas
 
+from flask import Flask, request, jsonify  
+from flask_cors import CORS
+# Criamos a aplicação Flask
+# "__name__" indica que este é o arquivo principal do nosso programa
+app = Flask(__name__)
+CORS(app)
+
+
 # Criamos a aplicação Flask
 # O Flask precisa saber qual é o arquivo principal do programa, então passamos "_name_" como referência
 app = Flask(__name__)
